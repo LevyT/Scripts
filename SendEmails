@@ -1,0 +1,11 @@
+#Send Email from unix CLI
+#sudo apt-get install swaks
+
+   swaks --to example@mail.com \
+   -tls \
+   --auth \
+   --auth-user=tomerlevy \
+   --auth-password=Haha \
+   --server smtp.gmail.com:587 \
+   --body Hey Mate \
+   --h-Subject "This is a Test"
